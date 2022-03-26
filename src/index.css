@@ -1,0 +1,21 @@
+.Massang {
+  color: red;
+  font-family: 'Shizuru', cursive;
+}
+
+.forma {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.forma button {
+  width: 50px;
+  height: 32.5px;
+}
+
+.forma textarea {
+  width: 200px;
+  height: 25px;
+}
+/*# sourceMappingURL=index.css.map */
