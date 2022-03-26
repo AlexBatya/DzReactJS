@@ -2,3 +2,14 @@
     color: red;
     font-family: 'Shizuru', cursive;
 }
+.forma{
+    display: flex;
+    & button{
+        width: 50px;
+        height:32.5px
+    }
+    & textarea{
+        width: 200px;
+        height:25px
+    }
+}
