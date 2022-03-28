@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {MessageList} from './App';
+import {MessageList} from './components/App.jsx';
 import './index.scss'
 
 function App(){
