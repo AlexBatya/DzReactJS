@@ -1,9 +1,11 @@
 import React from 'react';
 import '../index.scss'
 import { useEffect,useState } from 'react';
-import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import Grid from '@mui/material/Grid';
 import Header from './Header'
+import {Message} from './Message'
+import { ButtonMess } from './Button';
 
 
 export const MessageList=()=>{
@@ -52,6 +54,7 @@ useEffect(()=>{
     <div className='container'>
       <h2>
         <TextField
+        fullWidth
         autoFocus={true}
         onKeyPress={handlePressInput}
         label="Введите сообщение" 
@@ -59,25 +62,16 @@ useEffect(()=>{
         value={value}
         onChange = {(e)=>setValue(e.target.value)}
         />
-        <div className='buton'>
-        <Button 
-          variant="contained"
-          onClick={()=>
-            setMessanges([
-              ...messages,
-            {autor: "User",message: value,date:new Date().toLocaleDateString()}
-            ])
-          }>send message
-        </Button>
-        </div>
-        <hr />
-        {messages.map((message,i)=>(
-          <div key={i}>
-            <h2>{message.autor}</h2>
-            <p>{message.message}</p>
-            <p>{message.date}</p>
+        <ButtonMess 
+        value={value} 
+        messages={messages} 
+        setMessanges={setMessanges}/>
+        <div className='grid'>
+          <div className='Carts'></div>
+          <div className='Cart'>
+            <Message messages={messages} />
           </div>
-        ))}
+        </div>
       </h2>
     </div>
     </>

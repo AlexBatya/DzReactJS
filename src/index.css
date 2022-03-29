@@ -18,4 +18,37 @@
   width: 200px;
   height: 25px;
 }
+
+.buton {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.Chats {
+  border: 5px solid black;
+  background-color: gray;
+  height: 100%;
+}
+
+.Chat {
+  border: 5px solid black;
+  background-color: bisque;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
 /*# sourceMappingURL=index.css.map */
